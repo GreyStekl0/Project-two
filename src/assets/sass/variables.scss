@@ -1,0 +1,11 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 30px;
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+.container {
+  max-width: 1350px;
+}
