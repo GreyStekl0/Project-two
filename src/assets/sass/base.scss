@@ -20,13 +20,15 @@ ul {
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
-  //line-height: 1.5;
+  line-height: 1.3;
   color: $text;
 }
 pre {
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   color: inherit;
+  white-space: pre-line;
 }
 
 h1 {
