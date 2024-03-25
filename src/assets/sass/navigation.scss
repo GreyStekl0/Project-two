@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+}
+.navigation {
+  padding-top: 50px;
+  margin-bottom: 77px;
+
+  .navigation__wrapp {
+    display: flex;
+    justify-content: space-between;
+
+    .navigation__list {
+      display: flex;
+      align-items: center;
+      gap: 51px;
+
+    }
+  }
+}

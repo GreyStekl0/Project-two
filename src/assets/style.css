@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   --bs-gutter-x: 30px;
 }
@@ -7,7 +8,126 @@
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1260px;
+}
+
+/* обнуление стилей*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, p, pre, h1, h2, h3, h4, h5, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* обнуление стилей закончено*/
+/* настройка основных стилей */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #3F3A51;
+}
+
+pre {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+/* настройка основных стилей закончена */
+nav {
+  display: flex;
+}
+
+.navigation {
+  padding-top: 50px;
+  margin-bottom: 77px;
+}
+.navigation .navigation__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .navigation__wrapp .navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.promo {
+  margin-bottom: 80px;
+}
+.promo h1 {
+  padding-top: 56px;
+}
+.promo p {
+  padding-top: 16px;
+  color: #8F99AC;
+}
+.promo .promo__buttons {
+  display: flex;
+  gap: 20px;
+  padding-top: 19px;
+  font-size: 16px;
+}
+.promo .promo__buttons .button-one {
+  padding: 13px 32.5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4047E2;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+.promo .promo__buttons .button-one:hover {
+  background-color: white;
+  color: #4047E2;
+  border: 1px solid #4047E2;
+  padding: 12px 31.5px;
+}
+.promo .promo__buttons .button-two {
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: 1px solid #4047E2;
+  background-color: white;
+  color: #4047E2;
+  transition: background-color 0.5s, color 0.5s;
+}
+.promo .promo__buttons .button-two .button-two__img {
+  padding-right: 10px;
+  transition: fill 0.5s;
+  fill: #4047E2;
+}
+.promo .promo__buttons .button-two:hover {
+  background-color: #4047E2;
+  color: white;
+}
+.promo .promo__buttons .button-two:hover .button-two__img {
+  fill: white;
+}
+
+.class {
+  padding-top: 80px;
+  background-color: #DFE1FF;
+}
+.class pre {
+  padding-top: 28px;
+  white-space: pre-line;
 }
 
 /*# sourceMappingURL=style.css.map */

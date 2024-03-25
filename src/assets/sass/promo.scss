@@ -1,0 +1,58 @@
+.promo {
+  margin-bottom: 80px;
+  h1 {
+    padding-top: 56px;
+  }
+  p {
+    padding-top: 16px;
+    color: $gray;
+  }
+  .promo__buttons{
+    display: flex;
+    gap: 20px;
+    padding-top: 19px;
+    font-size: 16px;
+
+    .button-one {
+      padding: 13px 32.5px;
+      border-radius: 10px;
+      border: none;
+      background-color: $main;
+      color: white;
+      transition: background-color 0.5s, color 0.5s;
+
+      &:hover {
+        background-color: white;
+        color: $main;
+        border: 1px solid $main;
+        padding: 12px 31.5px;
+      }
+
+
+    }
+
+    .button-two {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 1px solid $main;
+      background-color: white;
+      color: $main;
+      transition: background-color 0.5s, color 0.5s;
+
+      .button-two__img {
+        padding-right: 10px;
+        transition: fill 0.5s;
+        fill: $main;
+      }
+
+      &:hover {
+        background-color: $main;
+        color: white;
+        .button-two__img {
+          fill: white;
+        }
+      }
+    }
+  }
+
+}
