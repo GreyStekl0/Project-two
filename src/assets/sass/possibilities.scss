@@ -4,11 +4,14 @@
   }
   .possibilities__Card {
     margin-top: 45px;
-    height: 320px;
+    height: 300px;
     width: 285px;
     border-radius: 20px;
     @media screen and (max-width: $xxl) {
       width: 100%;
+    }
+    @media screen and (max-width: $md) {
+      height: 280px;
     }
 
     .possibilities__Card-img-wrap{
@@ -35,6 +38,9 @@
       text-align: center;
       @media screen and (max-width: $xxl) {
         font-size: 16px;
+      }
+      @media screen and (max-width: $lg) {
+        padding-top: 8px;
       }
     }
   }

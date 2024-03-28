@@ -6,10 +6,10 @@
   <section class="history">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6">
           <img src="/history.png" alt="">
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <h2> Просматривайте историю занятий </h2>
           <pre>
             Записывайте занятия и возвращайтесь к ним когда угодно.

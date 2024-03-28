@@ -1,6 +1,10 @@
 .idea{
   padding-top: 67px;
   margin-bottom: 80px;
+  @media screen and (max-width: $lg) {
+    padding-top: 47px;
+    margin-bottom: 60px;
+  }
   h2 {
     text-align: center;
   }

@@ -79,6 +79,11 @@ h1 {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 27px;
+  }
+}
 
 h2 {
   font-weight: 800;
@@ -101,7 +106,21 @@ nav {
 
 .navigation {
   padding-top: 50px;
-  margin-bottom: 77px;
+}
+@media screen and (max-width: 992px) {
+  .navigation {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navigation {
+    padding-top: 14px;
+  }
 }
 .navigation .navigation__wrapp {
   display: flex;
@@ -111,6 +130,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 51px;
+}
+@media screen and (max-width: 576px) {
+  .navigation .navigation__wrapp .navigation__list {
+    display: none;
+  }
 }
 .navigation .navigation__wrapp .navigation__list .navigation__list-link {
   text-decoration: none;
@@ -123,14 +147,26 @@ nav {
 }
 
 .promo {
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 992px) {
-  .promo .promo__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .promo img {
+    padding-top: 15px;
+  }
+}
+.promo .promo__mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .promo {
+    padding-top: 60px;
+  }
+  .promo .promo__desktop {
+    display: none;
+  }
+  .promo .promo__mobile {
+    display: block;
   }
 }
 .promo h1 {
@@ -145,11 +181,24 @@ nav {
   padding-top: 16px;
   color: #8F99AC;
 }
+@media screen and (max-width: 576px) {
+  .promo p {
+    padding-top: 18px;
+  }
+}
 .promo .promo__buttons {
   display: flex;
   gap: 20px;
   padding-top: 19px;
   font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .promo .promo__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 26px;
+  }
 }
 .promo .promo__buttons .button-one {
   padding: 13px 32.5px;
@@ -162,6 +211,13 @@ nav {
 @media screen and (max-width: 1440px) {
   .promo .promo__buttons .button-one {
     padding: 8px 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .promo .promo__buttons .button-one {
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
   }
 }
 .promo .promo__buttons .button-one:hover {
@@ -188,10 +244,23 @@ nav {
     padding: 8px 12px;
   }
 }
+@media screen and (max-width: 576px) {
+  .promo .promo__buttons .button-two {
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+  }
+}
 .promo .promo__buttons .button-two .button-two__img {
   padding-right: 10px;
   transition: fill 0.5s;
   fill: #4047E2;
+}
+@media screen and (max-width: 576px) {
+  .promo .promo__buttons .button-two .button-two__img {
+    width: 24px;
+    height: 20px;
+  }
 }
 .promo .promo__buttons .button-two:hover {
   background-color: #4047E2;
@@ -205,20 +274,50 @@ nav {
   padding: 80px 0;
   background-color: #DFE1FF;
 }
+@media screen and (max-width: 576px) {
+  .class {
+    background-color: #fff;
+  }
+}
 .class pre {
   padding-top: 28px;
 }
+@media screen and (max-width: 992px) {
+  .class pre {
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .class img {
+    padding-top: 30px;
+  }
+}
 
 .history {
-  padding-top: 80px;
-  margin-bottom: 80px;
+  padding: 80px 0;
+}
+@media screen and (max-width: 576px) {
+  .history .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .history h2 {
   padding-top: 90px;
 }
+@media screen and (max-width: 1200px) {
+  .history h2 {
+    padding-top: 30px;
+  }
+}
 @media screen and (max-width: 992px) {
   .history h2 {
-    padding-top: 15px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .history h2 {
+    padding-top: 20px;
   }
 }
 .history pre {
@@ -226,7 +325,7 @@ nav {
 }
 @media screen and (max-width: 992px) {
   .history pre {
-    padding-top: 10px;
+    padding-top: 25px;
   }
 }
 .history img {
@@ -239,13 +338,18 @@ nav {
 }
 .possibilities .possibilities__Card {
   margin-top: 45px;
-  height: 320px;
+  height: 300px;
   width: 285px;
   border-radius: 20px;
 }
 @media screen and (max-width: 1440px) {
   .possibilities .possibilities__Card {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .possibilities .possibilities__Card {
+    height: 280px;
   }
 }
 .possibilities .possibilities__Card .possibilities__Card-img-wrap {
@@ -278,6 +382,11 @@ nav {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 992px) {
+  .possibilities .possibilities__Card .possibilities__Card-text {
+    padding-top: 8px;
+  }
+}
 .possibilities .possibilities__Card-0, .possibilities .possibilities__Card-2 {
   background-color: #DFE1FF;
 }
@@ -288,6 +397,12 @@ nav {
 .idea {
   padding-top: 67px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .idea {
+    padding-top: 47px;
+    margin-bottom: 60px;
+  }
 }
 .idea h2 {
   text-align: center;
@@ -314,12 +429,27 @@ nav {
   background-color: #DFE1FF;
   padding: 80px 0;
 }
+@media screen and (max-width: 992px) {
+  .reviews {
+    padding: 60px 0;
+  }
+}
 .reviews h2 {
   padding-top: 24px;
+}
+@media screen and (max-width: 576px) {
+  .reviews h2 {
+    padding-top: 0;
+  }
 }
 .reviews .reviews__left-text {
   padding-top: 14px;
   font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .reviews .reviews__left-text {
+    color: #8F99AC;
+  }
 }
 .reviews .reviews__button {
   margin-top: 20px;
@@ -329,6 +459,11 @@ nav {
   background-color: #4047E2;
   color: white;
   transition: background-color 0.5s, color 0.5s;
+}
+@media screen and (max-width: 576px) {
+  .reviews .reviews__button {
+    width: 100%;
+  }
 }
 .reviews .reviews__button:hover {
   background-color: white;
@@ -341,8 +476,25 @@ nav {
   padding-left: 30px;
   padding-right: 50px;
 }
+@media screen and (max-width: 768px) {
+  .reviews .reviews__block {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .reviews .reviews__block {
+    padding-top: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 .reviews .reviews__block .reviews__right-text {
   font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .reviews .reviews__block .reviews__right-text {
+    font-size: 16px;
+  }
 }
 .reviews .reviews__block .reviews__teacher {
   padding-top: 18px;
@@ -365,16 +517,59 @@ nav {
   padding-top: 65px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 27px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer .footer__top {
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #EAEAEA;
 }
+@media screen and (max-width: 992px) {
+  .footer .footer__top {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__top .footer__rus {
+    padding-top: 36px;
+  }
+}
 .footer .footer__bottom {
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer__bottom {
+    padding-top: 42px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__bottom .footer__text {
+    padding-top: 33px;
+  }
 }
 .footer .footer__bottom p {
   color: #8F99AC;

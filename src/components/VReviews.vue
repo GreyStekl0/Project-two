@@ -6,7 +6,7 @@
   <section class="reviews">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4">
           <h2>
             Дистанционные уроки проще простого
           </h2>
@@ -17,7 +17,7 @@
             Провести урок
           </button>
         </div>
-        <div class="offset-1 col-7 col-lg-6 offset-lg-1 reviews__block">
+        <div class="offset-md-1 col-md-7 col-lg-6 offset-lg-1 reviews__block">
           <p class="reviews__right-text">
             Я провожу уроки английского в «Виртуальном классе».
             Это помогло мне безболезненно перевести учеников на

@@ -24,7 +24,8 @@
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <img src="/promo.png" alt="">
+          <img src="/promo.png" alt="" class="promo__desktop">
+          <img src="/promo2.png" alt="" class="promo__mobile">
         </div>
       </div>
     </div>

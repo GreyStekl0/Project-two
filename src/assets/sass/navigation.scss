@@ -3,7 +3,15 @@ nav {
 }
 .navigation {
   padding-top: 50px;
-  margin-bottom: 77px;
+  @media screen and (max-width: $lg) {
+    padding-top: 30px;
+  }
+  @media screen and (max-width: $md) {
+    padding-top: 20px;
+  }
+  @media screen and (max-width: $sm) {
+    padding-top: 14px;
+  }
 
   .navigation__wrapp {
     display: flex;
@@ -13,6 +21,9 @@ nav {
       display: flex;
       align-items: center;
       gap: 51px;
+      @media screen and (max-width: $sm) {
+        display: none;
+      }
 
       .navigation__list-link{
         text-decoration: none;

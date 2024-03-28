@@ -43,7 +43,7 @@ const possibilities = [
         Возможности
       </h2>
       <div class="row">
-        <div class="col-3"
+        <div class="col-6 col-md-3"
              v-for="(item,index) in possibilities"
              :key="index">
           <div :class="`possibilities__Card possibilities__Card-${index}`" :id="`possibilities-card-${index}`">

@@ -1,14 +1,26 @@
 .promo {
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @media screen and (max-width: $lg) {
-    .promo__block{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    img {
+      padding-top: 15px;
     }
   }
+  .promo__mobile {
+    display: none;
+  }
+  @media screen and (max-width: $sm) {
+    padding-top: 60px;
+    .promo__desktop {
+      display: none;
+    }
+    .promo__mobile {
+      display: block;
+    }
+  }
+
+
 
   h1 {
     padding-top: 56px;
@@ -19,6 +31,9 @@
   p {
     padding-top: 16px;
     color: $gray;
+    @media screen and (max-width: $sm) {
+      padding-top: 18px;
+    }
   }
 
   .promo__buttons{
@@ -26,6 +41,12 @@
     gap: 20px;
     padding-top: 19px;
     font-size: 16px;
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding-top: 26px;
+    }
 
     .button-one {
       padding: 13px 32.5px;
@@ -37,6 +58,11 @@
       @media screen and (max-width: $xxl) {
         padding: 8px 12px;
       }
+      @media screen and (max-width: $sm) {
+        align-items: center;
+        width: 100%;
+        white-space: nowrap;
+      }
 
       &:hover {
         background-color: white;
@@ -46,6 +72,7 @@
         @media screen and (max-width: $xxl) {
           padding: 7px 11px;
         }
+
       }
     }
 
@@ -59,11 +86,20 @@
       @media screen and (max-width: $xxl) {
         padding: 8px 12px;
       }
+      @media screen and (max-width: $sm) {
+        align-items: center;
+        width: 100%;
+        white-space: nowrap;
+      }
 
       .button-two__img {
         padding-right: 10px;
         transition: fill 0.5s;
         fill: $main;
+        @media screen and (max-width: $sm) {
+          width: 24px;
+          height: 20px;
+        }
       }
 
       &:hover {

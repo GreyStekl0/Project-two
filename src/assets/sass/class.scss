@@ -1,9 +1,18 @@
 .class{
   padding: 80px 0;
-  //padding-top: 80px;
-  //padding-bottom: 80px;
   background-color: #DFE1FF;
+  @media screen and (max-width: $sm) {
+    background-color: #fff;
+  }
   pre {
     padding-top: 28px;
+    @media screen and (max-width: $lg) {
+      padding-top: 25px;
+    }
+  }
+  @media screen and (max-width: $lg) {
+    img {
+      padding-top: 30px;
+    }
   }
 }
