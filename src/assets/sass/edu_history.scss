@@ -4,9 +4,16 @@
 
   h2 {
     padding-top: 90px;
+    @media screen and (max-width: $lg) {
+      padding-top: 15px;
+    }
   }
   pre {
     padding-top: 30px;
+    @media screen and (max-width: $lg) {
+      padding-top: 10px;
+    }
+
   }
 
   img{

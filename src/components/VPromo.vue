@@ -6,7 +6,7 @@
   <section class="promo">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6 promo__block">
           <h1>
             Сервис для проведения онлайн-занятий
           </h1>
@@ -23,7 +23,7 @@
             </button>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <img src="/promo.png" alt="">
         </div>
       </div>

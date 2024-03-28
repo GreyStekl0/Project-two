@@ -17,7 +17,7 @@
             Провести урок
           </button>
         </div>
-        <div class="col-6 offset-1 reviews__block">
+        <div class="offset-1 col-7 col-lg-6 offset-lg-1 reviews__block">
           <p class="reviews__right-text">
             Я провожу уроки английского в «Виртуальном классе».
             Это помогло мне безболезненно перевести учеников на
@@ -25,7 +25,7 @@
             образовательный процесс.
           </p>
           <div class="reviews__teacher">
-            <img src="/public/teacher.png" alt="teacher" />
+            <img src="/teacher.png" alt="teacher" />
             <p>
               Иван Иванов <br>
               <span>Учитель математики</span>
