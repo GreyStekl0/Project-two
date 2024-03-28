@@ -14,6 +14,16 @@ nav {
       align-items: center;
       gap: 51px;
 
+      .navigation__list-link{
+        text-decoration: none;
+        color: $text;
+        transition: color 0.2s;
+
+        &:hover {
+          text-decoration: underline;
+          color: $main
+        }
+      }
     }
   }
 }

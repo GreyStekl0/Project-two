@@ -10,10 +10,10 @@
           <img src="/logo.svg" alt="logo">
           <ul class="navigation__list">
             <li class="navigation__list-item">
-              <p> Возможности </p>
+              <a href="#" class="navigation__list-link"> Возможности </a>
             </li>
             <li class="navigation__list-item">
-              <p> Как это работает? </p>
+              <a href="#" class="navigation__list-link"> Как это работает? </a>
             </li>
           </ul>
         </div>

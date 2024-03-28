@@ -1,0 +1,21 @@
+.footer{
+  padding-top: 65px;
+  padding-bottom: 50px;
+
+  .footer__top{
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EAEAEA;
+
+  }
+  .footer__bottom{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      color: $gray;
+    }
+  }
+}
