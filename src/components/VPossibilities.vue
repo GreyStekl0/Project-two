@@ -1,4 +1,8 @@
 <script setup>
+import {Swiper} from "swiper";
+import { onMounted } from 'vue'
+import {Navigation, Pagination} from "swiper/modules";
+
 const possibilities = [
   {
     img: {
@@ -34,6 +38,19 @@ const possibilities = [
     text: "Материалы урока"
   }
 ]
+
+let swiper;
+
+onMounted(() => {
+  swiper = new Swiper(".mySwiper", {
+    modules: [Navigation, Pagination],
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+});
+
 </script>
 
 <template>
@@ -43,10 +60,10 @@ const possibilities = [
         Возможности
       </h2>
       <div class="row">
-        <div class="col-6 col-md-3"
+        <div class="col-6 col-md-3 d-none d-sm-block"
              v-for="(item,index) in possibilities"
              :key="index">
-          <div :class="`possibilities__Card possibilities__Card-${index}`" :id="`possibilities-card-${index}`">
+          <div :class="`possibilities__Card possibilities__Card-${index}`">
             <div class="possibilities__Card-img-wrap">
               <img :src="item.img.src" :alt="item.img.alt">
             </div>
@@ -57,11 +74,37 @@ const possibilities = [
             </div>
           </div>
         </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                 v-for="(item, index) in possibilities"
+                 :key="index">
+              <div :class="`possibilities__Card possibilities__Card-${index}`" :id="`possibilities-card-${index}`">
+                <div class="possibilities__Card-img-wrap">
+                  <img :src="item.img.src" :alt="item.img.alt">
+                </div>
+                <div class="possibilities__Card-h2">
+                  {{ item.h2 }}
+                </div>
+                <div class="possibilities__Card-text" v-html="item.text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-
+.swiper{
+  width: 296px;
+  height: 100%;
+}
+.swiper-pagination {
+  position: relative;
+  padding-top: 16px;
+}
 </style>

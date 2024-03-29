@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="/history.png" alt="">
+          <img class="history__img" src="/history.png" alt="">
         </div>
         <div class="col-md-6">
           <h2> Просматривайте историю занятий </h2>

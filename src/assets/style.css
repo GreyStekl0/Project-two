@@ -72,7 +72,7 @@ pre {
 
 h1 {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 700;
 }
 @media screen and (max-width: 1440px) {
   h1 {
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 32px;
 }
 @media screen and (max-width: 1440px) {
@@ -125,6 +125,7 @@ nav {
 .navigation .navigation__wrapp {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation .navigation__wrapp .navigation__list {
   display: flex;
@@ -144,6 +145,67 @@ nav {
 .navigation .navigation__wrapp .navigation__list .navigation__list-link:hover {
   text-decoration: underline;
   color: #4047E2;
+}
+.navigation .navigation__wrapp .navigation__menu {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .navigation .navigation__wrapp .navigation__menu {
+    display: block;
+  }
+}
+
+.aside {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 275px;
+  height: 100%;
+  z-index: 1000;
+}
+
+.aside.sidebar-open {
+  display: block;
+}
+.aside.sidebar-open .aside__wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 23px 12px;
+  height: 100%;
+}
+.aside.sidebar-open .aside__wrapp .aside__list {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 22px;
+}
+.aside.sidebar-open .aside__wrapp .aside__list .aside__list-link {
+  text-decoration: none;
+  color: #3F3A51;
+  transition: color 0.2s;
+}
+.aside.sidebar-open .aside__wrapp .aside__list .aside__list-link:hover {
+  text-decoration: underline;
+  color: #4047E2;
+}
+.aside.sidebar-open .aside__wrapp p {
+  font-size: 14px;
+  color: #8F99AC;
+}
+.aside.sidebar-open .aside__wrapp .aside__info {
+  height: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+.aside.sidebar-open .aside__wrapp .aside__info .aside__info-p {
+  padding-top: 16px;
 }
 
 .promo {
@@ -167,6 +229,7 @@ nav {
   }
   .promo .promo__mobile {
     display: block;
+    width: 100%;
   }
 }
 .promo h1 {
@@ -332,6 +395,11 @@ nav {
   border-radius: 10px;
   box-shadow: 0 10px 50px rgba(64, 71, 226, 0.2);
 }
+@media screen and (max-width: 576px) {
+  .history img {
+    margin-top: 30px;
+  }
+}
 
 .possibilities h2 {
   text-align: center;
@@ -347,9 +415,9 @@ nav {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .possibilities .possibilities__Card {
-    height: 280px;
+    height: 320px;
   }
 }
 .possibilities .possibilities__Card .possibilities__Card-img-wrap {
@@ -373,6 +441,11 @@ nav {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 768px) {
+  .possibilities .possibilities__Card .possibilities__Card-h2 {
+    font-size: 20px;
+  }
+}
 .possibilities .possibilities__Card .possibilities__Card-text {
   padding-top: 18px;
   text-align: center;
@@ -380,6 +453,11 @@ nav {
 @media screen and (max-width: 1440px) {
   .possibilities .possibilities__Card .possibilities__Card-text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .possibilities .possibilities__Card .possibilities__Card-text {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -392,6 +470,14 @@ nav {
 }
 .possibilities .possibilities__Card-1, .possibilities .possibilities__Card-3 {
   background-color: #FFE1AD;
+}
+.possibilities .mySwiper {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .possibilities .mySwiper {
+    display: block;
+  }
 }
 
 .idea {

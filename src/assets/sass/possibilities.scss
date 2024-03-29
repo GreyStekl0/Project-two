@@ -10,8 +10,8 @@
     @media screen and (max-width: $xxl) {
       width: 100%;
     }
-    @media screen and (max-width: $md) {
-      height: 280px;
+    @media screen and (max-width: $sm) {
+      height: 320px;
     }
 
     .possibilities__Card-img-wrap{
@@ -32,12 +32,18 @@
       @media screen and (max-width: $xxl) {
         font-size: 18px;
       }
+      @media screen and (max-width: $md) {
+        font-size: 20px;
+      }
     }
     .possibilities__Card-text {
       padding-top: 18px;
       text-align: center;
       @media screen and (max-width: $xxl) {
         font-size: 16px;
+      }
+      @media screen and (max-width: $sm) {
+        font-size: 18px;
       }
       @media screen and (max-width: $lg) {
         padding-top: 8px;
@@ -51,4 +57,11 @@
     .possibilities__Card-1, .possibilities__Card-3 {
       background-color: #FFE1AD;
     }
+
+  .mySwiper{
+    display: none;
+    @media screen and (max-width: $sm) {
+      display: block;
+    }
+  }
 }
