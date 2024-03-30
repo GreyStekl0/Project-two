@@ -1,28 +1,29 @@
 <script setup>
+//Выберите время, предмет и класс. <br> Ученики получат уведомление о <br> предстоящем уроке.
 const idea = [
   {
     img: {
-      src:"/Timetable.png",
-      alt:"Timetable"
+      src: "/Timetable.png",
+      alt: "Timetable"
     },
-  h3:"Составьте расписание",
-  text:"Выберите время, предмет и класс. <br> Ученики получат уведомление о <br> предстоящем уроке."
+    h3: "Составьте расписание",
+    text: ""
   },
   {
     img: {
-      src:"/Group.png",
-      alt:"Group"
+      src: "/Group.png",
+      alt: "Group"
     },
-    h3:"Подготовьте материал",
-    text:"Загружайте необходимые материалы <br> к уроку"
+    h3: "Подготовьте материал",
+    text: ["Загружайте необходимые материалы ", " к уроку"]
   },
   {
     img: {
-      src:"/Lesson.png",
-      alt:"Lesson"
+      src: "/Lesson.png",
+      alt: "Lesson"
     },
-    h3:"Начните урок с учениками",
-    text:"Задавайте вопросы и вызывайте <br> «к доске» детей с поднятой рукой."
+    h3: "Начните урок с учениками",
+    text: ["Задавайте вопросы и вызывайте ", " «к доске» детей с поднятой рукой."]
   },
 
 ]
@@ -45,7 +46,9 @@ const idea = [
             <div class="idea__Card-h3">
               {{ item.h3 }}
             </div>
-            <div class="idea__Card-text" v-html="item.text">
+            <div class="idea__Card-text" v-for="(item,index) in item.text"
+                 :key="index">
+              {{ item }}
             </div>
           </div>
         </div>

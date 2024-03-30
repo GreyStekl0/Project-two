@@ -12,6 +12,7 @@
   }
   @media screen and (max-width: $sm) {
     padding-top: 60px;
+    padding-bottom: 0;
     .promo__desktop {
       display: none;
     }

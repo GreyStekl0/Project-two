@@ -3,6 +3,8 @@
   background-color: #DFE1FF;
   @media screen and (max-width: $sm) {
     background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
   pre {
     padding-top: 28px;

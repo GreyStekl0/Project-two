@@ -26,6 +26,9 @@
     .idea__Card-text{
       padding-top: 24px;
       text-align: center;
+      &:last-child{
+        padding-top: 2px;
+      }
     }
 
   }
