@@ -99,11 +99,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.swiper-slide{
-  display: flex;
-  justify-content: center;
-}
-.swiper__card {
-  width: 298px;
-}
+
 </style>

@@ -63,5 +63,12 @@
     @media screen and (max-width: $sm) {
       display: block;
     }
+    .swiper-slide{
+      display: flex;
+      justify-content: center;
+    }
+    .swiper__card {
+      width: 298px;
+    }
   }
 }
