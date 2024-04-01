@@ -79,7 +79,7 @@ onMounted(() => {
             <div class="swiper-slide"
                  v-for="(item, index) in possibilities"
                  :key="index">
-              <div :class="`possibilities__Card possibilities__Card-${index}`" :id="`possibilities-card-${index}`">
+              <div :class="`swiper__card possibilities__Card-${index}`" :id="`swiper-card-${index}`">
                 <div class="possibilities__Card-img-wrap">
                   <img :src="item.img.src" :alt="item.img.alt">
                 </div>
@@ -99,12 +99,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.swiper{
-  width: 296px;
-  height: 100%;
+.swiper-slide{
+  display: flex;
+  justify-content: center;
 }
-.swiper-pagination {
-  position: relative;
-  padding-top: 16px;
+.swiper__card {
+  width: 298px;
 }
 </style>
