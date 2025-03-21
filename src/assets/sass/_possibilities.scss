@@ -2,6 +2,7 @@
   h2 {
     text-align: center;
   }
+
   .possibilities__Card, .swiper__card {
     margin-top: 45px;
     height: 300px;
@@ -14,7 +15,7 @@
       height: 320px;
     }
 
-    .possibilities__Card-img-wrap{
+    .possibilities__Card-img-wrap {
       padding-top: 48px;
       display: flex;
       justify-content: center;
@@ -36,6 +37,7 @@
         font-size: 20px;
       }
     }
+
     .possibilities__Card-text {
       padding-top: 18px;
       text-align: center;
@@ -51,22 +53,25 @@
     }
   }
 
-    .possibilities__Card-0, .possibilities__Card-2 {
-      background-color: #DFE1FF;
-    }
-    .possibilities__Card-1, .possibilities__Card-3 {
-      background-color: #FFE1AD;
-    }
+  .possibilities__Card-0, .possibilities__Card-2 {
+    background-color: #DFE1FF;
+  }
 
-  .mySwiper{
+  .possibilities__Card-1, .possibilities__Card-3 {
+    background-color: #FFE1AD;
+  }
+
+  .mySwiper {
     display: none;
     @media screen and (max-width: $sm) {
       display: block;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       display: flex;
       justify-content: center;
     }
+
     .swiper__card {
       width: 298px;
       margin-bottom: 36px;

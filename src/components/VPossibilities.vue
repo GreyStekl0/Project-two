@@ -1,21 +1,21 @@
 <script setup>
 import {Swiper} from "swiper";
-import { onMounted } from 'vue'
+import {onMounted} from 'vue'
 import {Navigation, Pagination} from "swiper/modules";
 
 const possibilities = [
   {
     img: {
-      src:"/possibilities_1.svg",
-      alt:"possibilities1"
+      src: "/possibilities_1.svg",
+      alt: "possibilities1"
     },
     h2: "Общение с классом",
     text: "Видеосвязь<br>Чат с классом"
   },
   {
     img: {
-      src:"/possibilities_2.svg",
-      alt:"possibilities2"
+      src: "/possibilities_2.svg",
+      alt: "possibilities2"
     },
     h2: "Проведение занятий",
     text: "Презентация файлов\n" +
@@ -23,16 +23,16 @@ const possibilities = [
   },
   {
     img: {
-      src:"/possibilities_3.svg",
-      alt:"possibilities3"
+      src: "/possibilities_3.svg",
+      alt: "possibilities3"
     },
     h2: "Посещаемость",
     text: "Автоматическое<br>отслеживание<br>присутствующих"
   },
   {
     img: {
-      src:"/possibilities_4.svg",
-      alt:"possibilities4"
+      src: "/possibilities_4.svg",
+      alt: "possibilities4"
     },
     h2: "История занятий",
     text: "Материалы урока"
